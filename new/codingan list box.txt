@@ -1,0 +1,15 @@
+Private Sub Tampil_data()
+   With ListBox1
+        .ColumnCount = 6
+        .List = Sheets("datainput").Range("A1:F1").CurrentRegion.Value
+        .ColumnWidths = "40;80;80;80;80;80"
+    
+        End With
+        
+        
+End Sub
+
+
+Private Sub UserForm_Activate()
+Tampil_data
+End Sub

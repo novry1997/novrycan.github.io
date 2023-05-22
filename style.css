@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Oswald:wght@400;500;600&family=Poppins:ital,wght@0,300;0,400;0,500;1,400&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: poppins, sans-serif;
+  background-color: #ffffff;
+}
+.jumbotron {
+  margin-bottom: 2rem;
+  padding-top: 4rem;
+  padding-bottom: 2rem;
+  background-image: url(./img/rrrr.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #0a0a0a;
+}
+
+.img {
+  position: relative;
+}
+.svg {
+  box-sizing: border-box;
+}
+.navbar {
+  position: fixed;
+  height: 50px;
+  width: 100%;
+  z-index: 999;
+}
+.navbar ul li a {
+  font-size: 1.2rem;
+}
+.navbar .nav-item {
+  padding: 0 1.2rem;
+  font-family: oswald, sans-serif;
+}
+.navbar-brand {
+  font-size: 1.5rem;
+  font-family: oswald, sans-serif;
+}
+.jumbotron h1 {
+  font-family: Libre Baskerville, sans-serif;
+  font-size: 2rem;
+}
+section {
+  padding-top: 5rem;
+}
+.jumbotron p {
+  font-size: 1.2rem;
+}
+.carousel-item img {
+  height: 200px;
+  margin-left: 0;
+  padding-left: 40%;
+}
+#galery .container .galery-1 {
+  display: flex;
+}
+#galery .container img {
+  overflow: auto;
+}
+#galery .container {
+  text-align: center;
+}
+#galery .container h2 {
+  margin: 15px;
+}

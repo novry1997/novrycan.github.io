@@ -1,0 +1,42 @@
+
+Private Sub BTsimpan_Click()
+Dim Baris As Long
+Dim IsiData As Variant
+
+
+Baris = GetBaris + 1
+IsiData = Array(Baris - 1, tbid.Value, tbnama.Value, tbktp.Value, tbbpjs.Value, tbalamat.Value, cbjenis.Value, cbstatus.Value, tbjabatan.Value)
+
+Sheet1.Range("A" & Baris).Resize(1, 8).Value = IsiData
+MsgBox "Data Berhasil Disimpan Sayang !!! ", vbInformation, Myapp
+Call BersihForm
+tbid.Text = BuatID
+    
+End Sub
+
+Private Sub UserForm_Initialize()
+cbjenis.AddItem "laki-laki"
+cbjenis.AddItem "perempuan"
+cbstatus.AddItem "Kontrak"
+cbstatus.AddItem "Tetap"
+tbid.Text = BuatID
+End Sub
+ 
+ 
+Private Sub BersihForm()
+tbid.Text = vbNullString
+tbnama.Text = vbNullString
+tbktp.Text = vbNullString
+tbbpjs.Text = vbNullString
+tbalamat.Text = vbNullString
+cbjenis.Text = vbNullString
+cbstatus.Text = vbNullString
+tbjabatan.Text = vbNullString
+End Sub
+ 
+Private Function BuatID() As String
+Dim Baris As Long
+
+Baris = GetBaris
+BuatID = "ID" & Format(Baris, "00000")
+End Function

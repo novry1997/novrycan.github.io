@@ -1,0 +1,5 @@
+Function GetBaris() As Long
+
+GetBaris = Sheet1.Range("A" & Sheet1.Rows.Count).End(xlUp).Row
+
+End Function
